@@ -16,4 +16,5 @@ nnoremap("<leader>fi", "<cmd>Telescope find_files<CR>")
 nnoremap("<leader>fe", "<cmd>Telescope diagnostics<CR>")
 nnoremap("<leader>fg", "<cmd>Telescope git_files<CR>")
 nnoremap("<leader>fc", "<cmd>Telescope git_commits<CR>")
-
+-- Blamer
+nnoremap("<leader>gb", "<cmd>BlamerToggle<CR>")

@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
+  ["blamer.nvim"] = {
+    loaded = true,
+    path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/blamer.nvim",
+    url = "https://github.com/APZelos/blamer.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/cmp-buffer",
