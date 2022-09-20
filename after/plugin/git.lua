@@ -1,3 +1,5 @@
-neogit.setup {}
-vim.g.blamer_enabled = 1
+neogit = require("neogit")
 
+neogit.setup {}
+
+ vim.g.blamer_enabled = 1
