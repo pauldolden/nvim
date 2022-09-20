@@ -240,6 +240,11 @@ _G.packer_plugins = {
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/vim-closetag",
     url = "https://github.com/alvan/vim-closetag"
   },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
+  },
   ["vim-devicons"] = {
     loaded = true,
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/vim-devicons",

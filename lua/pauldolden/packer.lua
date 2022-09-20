@@ -44,6 +44,7 @@ return require('packer').startup(function(use)
      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   })
   -- Misc
+  use("tpope/vim-commentary")
   use("TimUntersberger/neogit")
   use("nvim-lua/plenary.nvim")
   use("nvim-lua/popup.nvim")

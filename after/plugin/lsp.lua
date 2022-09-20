@@ -1,33 +1,54 @@
+local Remap = require("pauldolden.keymap")
+local nnoremap = Remap.nnoremap
+local inoremap = Remap.inoremap
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
+local function config(_config)
+	return vim.tbl_deep_extend("force", {
+		capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+		on_attach = function()
+			nnoremap("gd", function() vim.lsp.buf.definition() end)
+			nnoremap("K", function() vim.lsp.buf.hover() end)
+			nnoremap("<leader>vws", function() vim.lsp.buf.workspace_symbol() end)
+			nnoremap("<leader>vd", function() vim.diagnostic.open_float() end)
+			nnoremap("[d", function() vim.diagnostic.goto_next() end)
+			nnoremap("]d", function() vim.diagnostic.goto_prev() end)
+			nnoremap("<leader>vca", function() vim.lsp.buf.code_action() end)
+			nnoremap("<leader>vco", function() vim.lsp.buf.code_action({
+                filter = function(code_action)
+                    if not code_action or not code_action.data then
+                        return false
+                    end
+
+                    local data = code_action.data.id
+                    return string.sub(data, #data - 1, #data) == ":0"
+                end,
+                apply = true
+            }) end)
+			nnoremap("<leader>vrr", function() vim.lsp.buf.references() end)
+			nnoremap("<leader>vrn", function() vim.lsp.buf.rename() end)
+			inoremap("<C-h>", function() vim.lsp.buf.signature_help() end)
+		end,
+	}, _config or {})
+end
+
 -- TypeScript
-require('lspconfig').tsserver.setup {
-    capabilities = capabilities
-}
+require('lspconfig').tsserver.setup(config())
 -- HTML
-require('lspconfig').html.setup {
-     capabilities = capabilities
-}
+require('lspconfig').html.setup(config())
+-- HTML
 -- Go
- require'lspconfig'.gopls.setup{
-     capabilities = capabilities
-}
+ require'lspconfig'.gopls.setup(config())
 -- Rust
- require'lspconfig'.rust_analyzer.setup{
-     capabilities = capabilities
-}
+ require'lspconfig'.rust_analyzer.setup(config())
 -- Svelte
-require'lspconfig'.svelte.setup{
-    capabilities = capabilities
-}
+require'lspconfig'.svelte.setup(config())
 vim.g.vim_svelte_plugin_load_full_syntax = 1
 vim.g.vim_svelte_plugin_use_typescript = 1
 vim.g.vim_svelte_plugin_use_sass = 1
 -- Tailwind
-require'lspconfig'.tailwindcss.setup{
-    capabilities = capabilities
-}
+require'lspconfig'.tailwindcss.setup(config())
 
 -- Setup Completion
 local cmp = require("cmp")
