@@ -11,9 +11,13 @@ return require('packer').startup(function(use)
   use("nvim-treesitter/nvim-treesitter", {
         run = ":TSUpdate"
   })
-
+  -- Treesitter
   use("nvim-treesitter/playground")
   use("romgrk/nvim-treesitter-context")
+  use {
+    "windwp/nvim-ts-autotag",
+    config = function() require('nvim-ts-autotag').setup() end
+   }
 
   use("mfussenegger/nvim-dap")
   use("rcarriga/nvim-dap-ui")
@@ -39,25 +43,13 @@ return require('packer').startup(function(use)
   use("fatih/vim-go")
   -- Formatter
   use("sbdchd/neoformat")
+  -- Markup
+  use("mattn/emmet-vim")
   -- Status Line
   use({
     'nvim-lualine/lualine.nvim',
      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   })
-  -- Misc
-  use("tpope/vim-commentary")
-  use("nvim-lua/plenary.nvim")
-  use("nvim-lua/popup.nvim")
-  use("nvim-telescope/telescope.nvim")
-  use("tpope/vim-surround")
-  use("alvan/vim-closetag")
-  use("tpope/vim-capslock")
-  use("mbbill/undotree")
-  use {
-	"windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
-   }
-  use("APZelos/blamer.nvim")
   -- Menu
   use("gelguy/wilder.nvim")
   -- Tabs
@@ -69,4 +61,17 @@ return require('packer').startup(function(use)
   use("tpope/vim-fugitive")
   use("TimUntersberger/neogit")
   use("ThePrimeagen/git-worktree.nvim")
+  -- Misc
+  use("tpope/vim-commentary")
+  use("nvim-lua/plenary.nvim")
+  use("nvim-lua/popup.nvim")
+  use("nvim-telescope/telescope.nvim")
+  use("tpope/vim-surround")
+  use("tpope/vim-capslock")
+  use("mbbill/undotree")
+  use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+   }
+  use("APZelos/blamer.nvim")
 end)

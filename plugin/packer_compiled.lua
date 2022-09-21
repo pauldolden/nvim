@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   ["git-worktree.nvim"] = {
     loaded = true,
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/git-worktree.nvim",
@@ -190,6 +195,12 @@ _G.packer_plugins = {
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
     url = "https://github.com/romgrk/nvim-treesitter-context"
   },
+  ["nvim-ts-autotag"] = {
+    config = { "\27LJ\2\n=\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\20nvim-ts-autotag\frequire\0" },
+    loaded = true,
+    path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -240,11 +251,6 @@ _G.packer_plugins = {
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/vim-capslock",
     url = "https://github.com/tpope/vim-capslock"
   },
-  ["vim-closetag"] = {
-    loaded = true,
-    path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/vim-closetag",
-    url = "https://github.com/alvan/vim-closetag"
-  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/vim-commentary",
@@ -283,6 +289,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-ts-autotag
+time([[Config for nvim-ts-autotag]], true)
+try_loadstring("\27LJ\2\n=\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\20nvim-ts-autotag\frequire\0", "config", "nvim-ts-autotag")
+time([[Config for nvim-ts-autotag]], false)
 -- Config for: nvim-autopairs
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
