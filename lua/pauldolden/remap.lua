@@ -1,6 +1,5 @@
 local nnoremap = require("pauldolden.keymap").nnoremap
-local iunmap = require("pauldolden.keymap").nnoremap
-
+local xnoremap = require("pauldolden.keymap").xnoremap
 -- NERDTree
 nnoremap("<leader>t", "<cmd>NERDTreeToggle<CR>")
 nnoremap("<leader>f", "<cmd>NERDTreeFocus<CR>")
@@ -9,7 +8,8 @@ nnoremap("<leader>2", "<cmd>BufferNext<CR>")
 nnoremap("<leader>1", "<cmd>BufferPrevious<CR>")
 nnoremap("<leader><BS>", "<cmd>BufferClose<CR>")
 -- Misc
-nnoremap("<leader>s", "<cmd>w<CR>")
+nnoremap("<leader>w", "<cmd>w<CR>")
+nnoremap("<leader>q", "<cmd>q<CR>")
 nnoremap("<leader>p", "<cmd>Neoformat<CR>")
 nnoremap("<leader>u", "<cmd>UndotreeShow<CR>")
 -- Telescope
@@ -21,4 +21,8 @@ nnoremap("<leader>fc", "<cmd>Telescope git_commits<CR>")
 nnoremap("<leader>gb", "<cmd>BlamerToggle<CR>")
 -- Git
 nnoremap("<leader>gi", "<cmd>Git<CR>")
-nnoremap("<leader>gd", "<cmd>Git diff<CR>")
+nnoremap("<leader>gd", "<cmd>Git diff %<CR>")
+nnoremap("<leader>ga", "<cmd>Git add %<CR>")
+-- Misc
+nnoremap("<leader>ep", "<cmd>echo expand('%:p')<CR>")
+xnoremap("<leader>p", "\"_dP")
