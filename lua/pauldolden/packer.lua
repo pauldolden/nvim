@@ -61,6 +61,7 @@ return require('packer').startup(function(use)
   use("tpope/vim-fugitive")
   use("TimUntersberger/neogit")
   use("ThePrimeagen/git-worktree.nvim")
+  use("APZelos/blamer.nvim")
   -- Misc
   use("tpope/vim-commentary")
   use("nvim-lua/plenary.nvim")
@@ -73,5 +74,4 @@ return require('packer').startup(function(use)
 	"windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
    }
-  use("APZelos/blamer.nvim")
 end)
