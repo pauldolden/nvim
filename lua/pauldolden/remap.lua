@@ -25,4 +25,5 @@ nnoremap("<leader>gd", "<cmd>Git diff %<CR>")
 nnoremap("<leader>ga", "<cmd>Git add %<CR>")
 -- Misc
 nnoremap("<leader>ep", "<cmd>echo expand('%:p')<CR>")
+nnoremap("<leader>yp", "let @+=expand('%:p')<CR>")
 xnoremap("<leader>p", "\"_dP")
