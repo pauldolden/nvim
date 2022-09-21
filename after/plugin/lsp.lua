@@ -50,7 +50,8 @@ vim.g.vim_svelte_plugin_use_typescript = 1
 vim.g.vim_svelte_plugin_use_sass = 1
 -- Tailwind
 require'lspconfig'.tailwindcss.setup(config())
-
+-- Lua
+require'lspconfig'.sumneko_lua.setup(config())
 -- Setup Completion
 local cmp = require("cmp")
 cmp.setup({
