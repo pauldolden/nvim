@@ -1,4 +1,5 @@
 local nnoremap = require("pauldolden.keymap").nnoremap
+local iunmap = require("pauldolden.keymap").nnoremap
 
 -- NERDTree
 nnoremap("<leader>t", "<cmd>NERDTreeToggle<CR>")
@@ -18,3 +19,6 @@ nnoremap("<leader>fg", "<cmd>Telescope git_files<CR>")
 nnoremap("<leader>fc", "<cmd>Telescope git_commits<CR>")
 -- Blamer
 nnoremap("<leader>gb", "<cmd>BlamerToggle<CR>")
+-- Git
+nnoremap("<leader>gi", "<cmd>Git<CR>")
+nnoremap("<leader>gd", "<cmd>Git diff<CR>")

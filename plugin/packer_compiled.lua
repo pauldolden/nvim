@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["git-worktree.nvim"] = {
+    loaded = true,
+    path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/git-worktree.nvim",
+    url = "https://github.com/ThePrimeagen/git-worktree.nvim"
+  },
   ["lsp_extensions.nvim"] = {
     loaded = true,
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/lsp_extensions.nvim",
@@ -249,6 +254,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/Users/pauldolden/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
   },
   ["vim-surround"] = {
     loaded = true,

@@ -36,6 +36,7 @@ return require('packer').startup(function(use)
   use("L3MON4D3/LuaSnip")
   use("saadparwaiz1/cmp_luasnip")
   use("leafOfTree/vim-svelte-plugin")
+  use("fatih/vim-go")
   -- Formatter
   use("sbdchd/neoformat")
   -- Status Line
@@ -45,7 +46,6 @@ return require('packer').startup(function(use)
   })
   -- Misc
   use("tpope/vim-commentary")
-  use("TimUntersberger/neogit")
   use("nvim-lua/plenary.nvim")
   use("nvim-lua/popup.nvim")
   use("nvim-telescope/telescope.nvim")
@@ -65,4 +65,8 @@ return require('packer').startup(function(use)
       "romgrk/barbar.nvim", 
      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   })
+  -- Git
+  use("tpope/vim-fugitive")
+  use("TimUntersberger/neogit")
+  use("ThePrimeagen/git-worktree.nvim")
 end)
