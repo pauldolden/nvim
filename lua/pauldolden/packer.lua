@@ -59,7 +59,6 @@ return require('packer').startup(function(use)
   })
   -- Git
   use("tpope/vim-fugitive")
-  use("TimUntersberger/neogit")
   use("ThePrimeagen/git-worktree.nvim")
   use("APZelos/blamer.nvim")
   -- Misc
@@ -68,11 +67,9 @@ return require('packer').startup(function(use)
   use("nvim-lua/popup.nvim")
   use("nvim-telescope/telescope.nvim")
   use("tpope/vim-surround")
-  use("tpope/vim-capslock")
   use("mbbill/undotree")
   use {
 	"windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
    }
-   use("mg979/vim-visual-multi")
 end)
