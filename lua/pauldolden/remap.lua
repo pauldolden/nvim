@@ -7,7 +7,9 @@ nnoremap("<leader><BS>", "<cmd>BufferClose<CR>")
 -- Misc
 nnoremap("<leader>w", "<cmd>w<CR>")
 nnoremap("<leader>q", "<cmd>q<CR>")
+nnoremap("<leader>q!", "<cmd>q!<CR>")
 nnoremap("<leader>p", "<cmd>Neoformat<CR>")
+nnoremap("<leader>l", "<cmd>EslintFixAll<CR>")
 nnoremap("<leader>u", "<cmd>UndotreeShow<CR>")
 -- Telescope
 nnoremap("<leader>fi", "<cmd>Telescope find_files hidden=true<CR>")

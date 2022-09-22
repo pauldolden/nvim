@@ -4,6 +4,7 @@ local previewers = require("telescope.previewers")
 local action_state = require("telescope.actions.state")
 local conf = require("telescope.config").values
 local actions = require("telescope.actions")
+local fb_actions = require "telescope".extensions.file_browser.actions
 
 require("telescope").setup({
 	defaults = {
@@ -31,7 +32,10 @@ require("telescope").setup({
             hijack_netrw = true,
             mappings = {
                 ["i"] = {
-                    -- your custom insert mode mappings
+                    ["<leader>c"] = fb_actions.create,
+                    ["<leader>r"] = fb_actions.rename,
+                    ["<leader>y"] = fb_actions.copy,
+                    ["<leader>d"] = fb_actions.remove,
                 },
                 ["n"] = {
                     -- your custom normal mode mappings
