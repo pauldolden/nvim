@@ -38,7 +38,8 @@ end
 require('lspconfig').tsserver.setup(config())
 -- HTML
 require('lspconfig').html.setup(config())
--- HTML
+-- ESLint
+require'lspconfig'.eslint.setup(config())
 -- Go
  require'lspconfig'.gopls.setup(config())
 -- Rust

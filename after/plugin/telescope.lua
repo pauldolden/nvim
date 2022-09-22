@@ -22,18 +22,25 @@ require("telescope").setup({
 			},
 		},
 	},
-    --[[
 	extensions = {
-		fzy_native = {
-			override_generic_sorter = false,
-			override_file_sorter = true,
-		},
-	},
-    ]]
+        file_browser = {
+            -- disables netrw and use telescope-file-browser in its place
+            hidden = true,
+            hijack_netrw = true,
+            mappings = {
+                ["i"] = {
+                    -- your custom insert mode mappings
+                },
+                ["n"] = {
+                    -- your custom normal mode mappings
+                },
+            },
+        },
+    },
 })
 
 require("telescope").load_extension("git_worktree")
--- require("telescope").load_extension("fzy_native")
+require("telescope").load_extension "file_browser"
 
 local M = {}
 

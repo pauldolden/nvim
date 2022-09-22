@@ -25,10 +25,10 @@ return require('packer').startup(function(use)
   -- Icons
   use("kyazdani42/nvim-web-devicons")
   -- NerdTree
-  use("preservim/nerdtree")
-  use("ryanoasis/vim-devicons")
-  use("Xuyuanp/nerdtree-git-plugin")
-  --  LSP/Completion
+  -- use("preservim/nerdtree")
+  -- use("ryanoasis/vim-devicons")
+  -- use("Xuyuanp/nerdtree-git-plugin")
+  -- --  LSP/Completion
   use("neovim/nvim-lspconfig")
   use("hrsh7th/cmp-nvim-lsp")
   use("hrsh7th/cmp-buffer")
@@ -54,18 +54,20 @@ return require('packer').startup(function(use)
   use("gelguy/wilder.nvim")
   -- Tabs
   use({
-      "romgrk/barbar.nvim", 
+      "romgrk/barbar.nvim",
      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   })
   -- Git
   use("tpope/vim-fugitive")
   use("ThePrimeagen/git-worktree.nvim")
   use("APZelos/blamer.nvim")
+  -- Telescope
+  use("nvim-telescope/telescope.nvim")
+  use("nvim-telescope/telescope-file-browser.nvim")
   -- Misc
   use("tpope/vim-commentary")
   use("nvim-lua/plenary.nvim")
   use("nvim-lua/popup.nvim")
-  use("nvim-telescope/telescope.nvim")
   use("tpope/vim-surround")
   use("mbbill/undotree")
   use {
