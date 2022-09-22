@@ -26,6 +26,8 @@ require("telescope").setup({
         file_browser = {
             -- disables netrw and use telescope-file-browser in its place
             hidden = true,
+            collapse_dirs = true,
+            grouped = true,
             hijack_netrw = true,
             mappings = {
                 ["i"] = {
