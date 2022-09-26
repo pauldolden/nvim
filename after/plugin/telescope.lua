@@ -27,8 +27,6 @@ require("telescope").setup({
         file_browser = {
             -- disables netrw and use telescope-file-browser in its place
             hidden = true,
-            collapse_dirs = true,
-            grouped = true,
             hijack_netrw = true,
             mappings = {
                 ["i"] = {
@@ -46,7 +44,8 @@ require("telescope").setup({
 })
 
 require("telescope").load_extension("git_worktree")
-require("telescope").load_extension "file_browser"
+require("telescope").load_extension("file_browser")
+require("telescope").load_extension("fzy_native")
 
 local M = {}
 

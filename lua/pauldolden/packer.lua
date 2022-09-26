@@ -8,10 +8,14 @@ return require('packer').startup(function(use)
   use("wbthomason/packer.nvim")
   -- Color scheme
   use("folke/tokyonight.nvim")
+  use("Rigellute/shades-of-purple.vim")
+  use("yeddaif/neovim-purple")
+  use("marko-cerovac/material.nvim")
+  use("Mofiqul/dracula.nvim")
+  -- Treesitter
   use("nvim-treesitter/nvim-treesitter", {
         run = ":TSUpdate"
   })
-  -- Treesitter
   use("nvim-treesitter/playground")
   use("romgrk/nvim-treesitter-context")
   use {
@@ -24,11 +28,7 @@ return require('packer').startup(function(use)
   use("theHamsta/nvim-dap-virtual-text")
   -- Icons
   use("kyazdani42/nvim-web-devicons")
-  -- NerdTree
-  -- use("preservim/nerdtree")
-  -- use("ryanoasis/vim-devicons")
-  -- use("Xuyuanp/nerdtree-git-plugin")
-  -- --  LSP/Completion
+  --  LSP/Completion
   use("neovim/nvim-lspconfig")
   use("hrsh7th/cmp-nvim-lsp")
   use("hrsh7th/cmp-buffer")
@@ -37,10 +37,13 @@ return require('packer').startup(function(use)
   use("nvim-lua/lsp_extensions.nvim")
   use("glepnir/lspsaga.nvim")
   use("simrat39/symbols-outline.nvim")
+  use("simrat39/rust-tools.nvim")
   use("L3MON4D3/LuaSnip")
   use("saadparwaiz1/cmp_luasnip")
   use("leafOfTree/vim-svelte-plugin")
-  use("fatih/vim-go")
+  use("williamboman/mason.nvim")
+  use("williamboman/mason-lspconfig.nvim")
+
   -- Formatter
   use("sbdchd/neoformat")
   -- Markup
@@ -64,6 +67,7 @@ return require('packer').startup(function(use)
   -- Telescope
   use("nvim-telescope/telescope.nvim")
   use("nvim-telescope/telescope-file-browser.nvim")
+  use("nvim-telescope/telescope-fzy-native.nvim")
   -- Misc
   use("tpope/vim-commentary")
   use("nvim-lua/plenary.nvim")

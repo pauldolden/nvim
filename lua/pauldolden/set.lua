@@ -26,7 +26,8 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
-
+-- remove ~ from blank lines
+vim.wo.fillchars='eob: '
 -- Give more space for displaying messages.
 vim.opt.cmdheight = 1
 
