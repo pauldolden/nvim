@@ -8,10 +8,7 @@ return require('packer').startup(function(use)
   use("wbthomason/packer.nvim")
   -- Color scheme
   use("folke/tokyonight.nvim")
-  use("Rigellute/shades-of-purple.vim")
-  use("yeddaif/neovim-purple")
-  use("marko-cerovac/material.nvim")
-  use("Mofiqul/dracula.nvim")
+  use("lukas-reineke/indent-blankline.nvim")
   -- Treesitter
   use("nvim-treesitter/nvim-treesitter", {
         run = ":TSUpdate"
@@ -62,7 +59,6 @@ return require('packer').startup(function(use)
   })
   -- Git
   use("tpope/vim-fugitive")
-  use("ThePrimeagen/git-worktree.nvim")
   use("APZelos/blamer.nvim")
   -- Telescope
   use("nvim-telescope/telescope.nvim")

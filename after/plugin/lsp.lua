@@ -36,9 +36,9 @@ end
 
 -- TypeScript
 require('lspconfig').tsserver.setup(config())
--- -- HTML
+-- HTML
 require('lspconfig').html.setup(config())
--- -- ESLint
+-- ESLint
 require('lspconfig').eslint.setup(config({
     filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "vue", "astro", "svelte" }
 }))
