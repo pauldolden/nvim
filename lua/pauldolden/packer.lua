@@ -40,7 +40,7 @@ return require('packer').startup(function(use)
   use("leafOfTree/vim-svelte-plugin")
   use("williamboman/mason.nvim")
   use("williamboman/mason-lspconfig.nvim")
-
+  use("/vim-test/vim-test")
   -- Formatter
   use("sbdchd/neoformat")
   -- Markup
@@ -66,6 +66,7 @@ return require('packer').startup(function(use)
   use("nvim-telescope/telescope-fzy-native.nvim")
   -- Misc
   use("tpope/vim-commentary")
+  use("mhinz/vim-startify")
   use("nvim-lua/plenary.nvim")
   use("nvim-lua/popup.nvim")
   use("tpope/vim-surround")
