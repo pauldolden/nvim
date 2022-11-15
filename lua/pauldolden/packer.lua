@@ -8,6 +8,8 @@ return require('packer').startup(function(use)
   use("wbthomason/packer.nvim")
   -- Color scheme
   use("folke/tokyonight.nvim")
+  use("folke/lsp-colors.nvim")
+  use { "catppuccin/nvim", as = "catppuccin" }
   use("lukas-reineke/indent-blankline.nvim")
   -- Treesitter
   use("nvim-treesitter/nvim-treesitter", {

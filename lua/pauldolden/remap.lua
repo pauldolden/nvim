@@ -8,7 +8,7 @@ nnoremap("<leader><BS>", "<cmd>BufferClose<CR>")
 nnoremap("<leader>w", "<cmd>w<CR>")
 nnoremap("<leader>q", "<cmd>q<CR>")
 nnoremap("<leader>fq", "<cmd>q!<CR>")
-nnoremap("<leader>p", "<cmd>Neoformat<CR>")
+nnoremap("<leader>fm", "<cmd>Neoformat<CR>")
 nnoremap("<leader>l", "<cmd>EslintFixAll<CR>")
 nnoremap("<leader>u", "<cmd>UndotreeShow<CR>")
 -- Telescope
