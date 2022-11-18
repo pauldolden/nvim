@@ -22,8 +22,7 @@ nnoremap("<leader>fs", "<cmd>Telescope live_grep<CR>")
 -- Git
 nnoremap("<leader>gs", "<cmd>Git<CR>")
 nnoremap("<leader>gb", "<cmd>BlamerToggle<CR>")
-nnoremap("<leader>gd", "<cmd>:vertical Gitdiff %<CR>")
-nnoremap("<leader>gds", "<cmd>:vertical Gdiffsplit<CR>")
+nnoremap("<leader>gd", "<cmd>:vertical Gdiffsplit<CR>")
 nnoremap("<leader>ga", "<cmd>Git add %<CR>")
 -- Misc
 nnoremap("<leader>ep", "<cmd>echo expand('%:p')<CR>")
