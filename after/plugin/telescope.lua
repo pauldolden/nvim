@@ -28,6 +28,7 @@ require("telescope").setup({
             -- disables netrw and use telescope-file-browser in its place
             hidden = true,
             hijack_netrw = true,
+            respect_gitignore = false,
             mappings = {
                 ["i"] = {
                     ["<leader>c"] = fb_actions.create,
