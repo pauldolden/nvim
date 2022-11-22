@@ -10,6 +10,7 @@ nnoremap("<leader>q", "<cmd>q<CR>")
 nnoremap("<leader>fq", "<cmd>q!<CR>")
 nnoremap("<leader>fm", "<cmd>Neoformat<CR>")
 nnoremap("<leader>l", "<cmd>EslintFixAll<CR>")
+nnoremap("<leader>t", "<cmd>Trouble<CR>")
 nnoremap("<leader>u", "<cmd>UndotreeShow<CR>")
 -- Telescope
 nnoremap("<leader>fi", "<cmd>Telescope find_files hidden=true no_ignore=true<CR>")

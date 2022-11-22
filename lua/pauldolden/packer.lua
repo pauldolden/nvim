@@ -42,6 +42,17 @@ return require('packer').startup(function(use)
   use("leafOfTree/vim-svelte-plugin")
   use("williamboman/mason.nvim")
   use("williamboman/mason-lspconfig.nvim")
+  use {
+  "folke/trouble.nvim",
+  requires = "kyazdani42/nvim-web-devicons",
+  config = function()
+    require("trouble").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+}
   -- Formatter
   use("sbdchd/neoformat")
   -- Markup
